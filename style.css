@@ -187,6 +187,8 @@ body {
 .right-home-div img {
   height: 68%;
   padding-left: 1.9rem;
+    object-fit: contain;
+
 }
 
 .vaccine-info {
@@ -245,6 +247,8 @@ body {
 .brand img {
   width: 25%;
   padding: 20px;
+  object-fit: contain;
+
 }
 
 /* certificate */
@@ -532,6 +536,8 @@ form .form-submit {
   display: block;
   width: 95%;
   height: auto;
+  object-fit: contain;
+
 }
 
 .second-get-vacc-div .verify-status {
@@ -584,6 +590,8 @@ form .form-submit {
   display: flex;
   justify-content: center;
   margin-top: 7rem;
+  object-fit: contain;
+
 }
 
 .man {
