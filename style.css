@@ -187,6 +187,7 @@ body {
 .right-home-div img {
   height: 68%;
   padding-left: 1.9rem;
+  object-fit: contain;
 }
 
 .vaccine-info {
@@ -521,7 +522,7 @@ form .form-submit {
   /* justify-content: flex-end; */
   background: var(--navblue);
   border-radius: 20px;
-  height: 404px;
+  height: auto;
 }
 
 .second-get-vacc-div img {
@@ -637,6 +638,7 @@ form .form-submit {
 
 .footer-container .logo img {
   width: 82%;
+  object-fit: contain;
 }
 
 .footer-title ul {
