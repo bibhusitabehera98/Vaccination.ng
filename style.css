@@ -246,6 +246,7 @@ body {
 .brand img {
   width: 25%;
   padding: 20px;
+  object-fit: contain;
 }
 
 /* certificate */
@@ -533,6 +534,7 @@ form .form-submit {
   display: block;
   width: 95%;
   height: auto;
+  object-fit: contain;
 }
 
 .second-get-vacc-div .verify-status {
@@ -591,6 +593,7 @@ form .form-submit {
   width: 50%;
   align-self: center;
   z-index: 40;
+  object-fit: contain;
 }
 
 .corona {
