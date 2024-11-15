@@ -187,7 +187,12 @@ body {
 .right-home-div img {
   height: 68%;
   padding-left: 1.9rem;
+<<<<<<< HEAD
   object-fit: contain;
+=======
+    object-fit: contain;
+
+>>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 .vaccine-info {
@@ -247,6 +252,10 @@ body {
   width: 25%;
   padding: 20px;
   object-fit: contain;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 /* certificate */
@@ -535,6 +544,10 @@ form .form-submit {
   width: 95%;
   height: auto;
   object-fit: contain;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 .second-get-vacc-div .verify-status {
@@ -587,6 +600,8 @@ form .form-submit {
   display: flex;
   justify-content: center;
   margin-top: 7rem;
+  object-fit: contain;
+
 }
 
 .man {
