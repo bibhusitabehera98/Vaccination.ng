@@ -10,7 +10,7 @@
   --white: #ffffff;
   --skyblue: #17c2ec;
   --offwhite: #ffffff80;
-  --gray: #263238;
+  --gray: #90969a;
   --black: #000000;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .header {
-  /* background-color: #0b153c; */
+  background-color: #1c2c6d;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,11 +34,12 @@ body {
   z-index: 100;
   position: fixed;
   top: 0;
-  width: 88%;
+  left: 0;
+  padding: 0 70px;
+  width: 100%;
 }
 
 .logo {
-  /* margin-left: 3rem; */
   position: relative;
 }
 
@@ -71,10 +72,9 @@ body {
 
 .header-title ul li a {
   text-decoration: none;
-  margin: 2rem;
-  /* margin-left: 0.9rem; */
+  margin: 0.85rem;
   font-size: 1rem;
-  color: #707171;
+  color: #9d9b9b;
   font-weight: 600;
 }
 
@@ -89,16 +89,22 @@ body {
 .header-button button {
   background: #c4c4c41a;
   color: var(--skyblue);
-
-  /* margin-right: 3rem; */
 }
 
-.hemburger-menu {
+.header-button button:hover {
+  background: var(--skyblue);
+  color: var(--white);
+  transition: all 0.8s ease-in;
+}
+
+.hemburger-menu,
+.close-menu {
   background-color: #c4c4c436;
   color: var(--white);
   padding: 5px;
   border-radius: 4px;
   display: none;
+  cursor: pointer;
 }
 
 /* Home */
@@ -151,6 +157,11 @@ body {
   background-color: var(--skyblue);
 }
 
+.home-btn .get-vaccine:hover,
+.submit:hover {
+  background: #11a2c6;
+}
+
 .home-btn .help-center {
   background: #c4c4c41a;
   border: 1px solid var(--skyblue);
@@ -187,12 +198,7 @@ body {
 .right-home-div img {
   height: 68%;
   padding-left: 1.9rem;
-<<<<<<< HEAD
   object-fit: contain;
-=======
-    object-fit: contain;
-
->>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 .vaccine-info {
@@ -204,7 +210,6 @@ body {
   margin-top: 0.5rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  /* box-shadow: 0 -10px 8px 1px #c4c4c436; */
 }
 
 .vaccine-info .location-container,
@@ -252,10 +257,6 @@ body {
   width: 25%;
   padding: 20px;
   object-fit: contain;
-<<<<<<< HEAD
-=======
-
->>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 /* certificate */
@@ -291,14 +292,14 @@ body {
 
 .form {
   display: flex;
-  /* margin: 16px 32px; */
   padding: 8px 28px;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .form > input {
-  padding: 10px 12px;
+  padding: 16px 12px;
   border: none;
   margin: 10px;
   width: 50%;
@@ -307,7 +308,7 @@ body {
 }
 
 .form .check {
-  padding: 10px 39px;
+  padding: 16px 39px;
   border-radius: 10px;
   color: var(--skyblue);
   font-weight: bold;
@@ -363,6 +364,7 @@ body {
   padding: 25px;
   width: 225px;
   height: 225px;
+  transition: all 0.6s ease;
 }
 
 .boxes .first-box:hover {
@@ -473,7 +475,7 @@ form label {
 
 form input {
   border: none;
-  padding: 10px 15px;
+  padding: 16px 15px;
   background: #d6d8de;
   width: 100%;
   border-radius: 10px;
@@ -544,10 +546,6 @@ form .form-submit {
   width: 95%;
   height: auto;
   object-fit: contain;
-<<<<<<< HEAD
-=======
-
->>>>>>> 56ac4a12725adae67b881a0e51372bd93e397c94
 }
 
 .second-get-vacc-div .verify-status {
@@ -596,29 +594,37 @@ form .form-submit {
 }
 
 .symptom-image {
+  position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 7rem;
   object-fit: contain;
-
+  max-height: 500px;
 }
 
 .man {
+  position: absolute;
   width: 50%;
   align-self: center;
   z-index: 40;
   object-fit: contain;
+  bottom: 0;
+}
+
+.right,
+.left {
+  z-index: 50;
 }
 
 .corona {
   width: 20%;
+  object-fit: contain;
 }
 
 .component {
   display: flex;
-  /* margin-bottom: 40px; */
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 
 .component span {
@@ -630,6 +636,7 @@ form .form-submit {
   color: var(--skyblue);
   font-weight: 600;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 .footer {
@@ -661,7 +668,6 @@ form .form-submit {
 
 .footer-title ul {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 1.5rem;
 }
@@ -672,8 +678,6 @@ form .form-submit {
 
 .footer-title ul li a {
   text-decoration: none;
-  /* margin: 2rem; */
-  /* margin-left: 0.9rem; */
   font-size: 1rem;
   color: #707171;
   font-weight: 600;
@@ -693,22 +697,12 @@ form .form-submit {
   font-size: 1.8rem;
 }
 
-@media screen and (max-width: 1050px) {
-  .header-title {
-    display: none;
-  }
+.social-link i:hover {
+  color: var(--skyblue);
+  transition: all 0.8s ease;
+}
 
-  .header-button {
-    display: none;
-  }
-
-  .hemburger-menu {
-    display: flex;
-    justify-content: flex-start;
-    width: 53px;
-    background: none;
-  }
-
+@media screen and (max-width: 1024px) {
   .text-content h1 {
     font-size: 40px;
   }
@@ -752,14 +746,6 @@ form .form-submit {
     font-size: 2rem;
   }
 
-  /* .vaccine-info {
-    flex-direction: column;
-  } */
-
-  /* .vaccine-info > div {
-    margin-bottom: 1rem;
-  } */
-
   .vaccine-info p {
     font-size: 0.8rem;
   }
@@ -773,7 +759,52 @@ form .form-submit {
   }
 }
 
+@media screen and (max-width: 895px) {
+  .header-title {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    padding: 3rem;
+  }
+
+  .active-title {
+    display: flex;
+  }
+
+  .active-title ul {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .active-button {
+    display: flex;
+  }
+
+  .hemburger-menu {
+    display: flex;
+    justify-content: flex-start;
+    width: 53px;
+    background: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 0 50px;
+  }
+
+  .active {
+    padding: 2rem;
+  }
+
   .first-div {
     flex-direction: column;
   }
@@ -839,6 +870,24 @@ form .form-submit {
     align-items: center;
   }
 
+  .component span {
+    font-size: 0.25rem;
+
+    text-align: center;
+  }
+
+  .symptom-image {
+    margin-top: 10rem;
+  }
+
+  .left {
+    margin-top: -2.9rem;
+  }
+
+  .right {
+    margin-top: -2.9rem;
+  }
+
   .boxes .first-box {
     margin: 10px 0;
   }
@@ -858,7 +907,6 @@ form .form-submit {
 
   .footer {
     padding: 50px;
-    /* height: 500px; */
     display: flex;
     align-items: center;
   }
@@ -874,10 +922,24 @@ form .form-submit {
 }
 
 @media screen and (max-width: 425px) {
-  .home-container {
+  .home-container,
+  .header {
     padding: 0px 26px;
   }
 
+  .active {
+    padding: 2rem 3rem;
+  }
+
+  .check-result,
+  .vaccinated-today,
+  .vaccine-registration {
+    padding: 50px 26px;
+  }
+
+  .symptoms {
+    padding: 50px 26px 0;
+  }
   .text-content p {
     font-size: 16px;
   }
@@ -939,6 +1001,11 @@ form .form-submit {
 
   .man {
     display: none;
+  }
+
+  .left,
+  .right {
+    margin: auto;
   }
 
   .footer {
