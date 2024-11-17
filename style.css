@@ -160,12 +160,19 @@ body {
 .home-btn .get-vaccine:hover,
 .submit:hover {
   background: #11a2c6;
+  transition: all 0.3s ease-in;
 }
 
 .home-btn .help-center {
   background: #c4c4c41a;
   border: 1px solid var(--skyblue);
   color: var(--skyblue);
+}
+
+.home-btn .help-center:hover {
+  color: var(--white);
+  background: var(--skyblue);
+  transition: all 0.3s ease-in;
 }
 
 .schedule {
@@ -531,7 +538,6 @@ form .form-submit {
 
 .injection-image {
   display: inline-block;
-  /* justify-content: flex-end; */
   background: var(--navblue);
   border-radius: 20px;
   height: auto;
@@ -688,6 +694,11 @@ form .form-submit {
   color: var(--white);
 }
 
+.footer-title ul li a:hover {
+  color: var(--skyblue);
+  transition: all 0.3s ease-in;
+}
+
 .social-link {
   display: flex;
   gap: 0.9rem;
@@ -760,6 +771,10 @@ form .form-submit {
 }
 
 @media screen and (max-width: 895px) {
+  .header {
+    transition: all 0.4s ease;
+  }
+
   .header-title {
     display: none;
   }
@@ -773,6 +788,7 @@ form .form-submit {
     flex-direction: column;
     height: 80vh;
     padding: 3rem;
+    transition: all 0.4s ease;
   }
 
   .active-title {
@@ -872,7 +888,7 @@ form .form-submit {
 
   .component span {
     font-size: 0.25rem;
-
+    padding: 10px 0px;
     text-align: center;
   }
 
@@ -1001,6 +1017,10 @@ form .form-submit {
 
   .man {
     display: none;
+  }
+
+  .component span {
+    font-size: 0.78rem;
   }
 
   .left,
